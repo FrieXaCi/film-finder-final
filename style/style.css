@@ -49,7 +49,7 @@ header nav .home {
   margin-bottom: 3px;
   padding: 5px;
   font-family: "Roboto", sans-serif;
-  font-size: 0.5rem;
+  font-size: 0.6rem;
   line-height: 15px;
   font-weight: 600;
   text-align: center;
@@ -69,7 +69,7 @@ header nav .radio-btn input[type=radio] {
 header nav .radio-btn label {
   padding: 5px;
   font-family: "Roboto", sans-serif;
-  font-size: 0.5rem;
+  font-size: 0.6rem;
   font-weight: 600;
   line-height: 15px;
   text-align: center;
