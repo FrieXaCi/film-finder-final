@@ -51,6 +51,7 @@ header {
       font-family: $fontSmall;
       font-size: 0.5rem;
       line-height: 15px;
+      font-weight: 600;
       text-align: center;
       text-decoration: none;
       cursor: pointer;
@@ -67,10 +68,10 @@ header {
     }
 
     .radio-btn label {
-      margin: 3px;
       padding: 5px;
       font-family: $fontSmall;
       font-size: 0.5rem;
+      font-weight: 600;
       line-height: 15px;
       text-align: center;
       cursor: pointer;
