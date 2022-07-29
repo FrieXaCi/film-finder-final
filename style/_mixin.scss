@@ -1,6 +1,6 @@
 @mixin filmtape($border) {
-  border-bottom: dashed white ($border);
-  border-top: dashed white ($border);
+  border-bottom: dashed antiquewhite ($border);
+  border-top: dashed antiquewhite ($border);
 }
 @mixin flex {
   display: flex;

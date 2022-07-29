@@ -117,8 +117,8 @@ main {
   width: 100%;
   padding: 5px;
   height: 350px;
-  border-bottom: dashed white 12px;
-  border-top: dashed white 12px;
+  border-bottom: dashed antiquewhite 12px;
+  border-top: dashed antiquewhite 12px;
   position: relative;
 }
 
