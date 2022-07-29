@@ -1,0 +1,234 @@
+// mobile first (max 450px)
+@import "mixin";
+@import "var";
+@import "media";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: $marge;
+  width: 98%;
+  height: 100vh;
+  background: black;
+  color: white;
+  font-size: 16px;
+}
+
+// navigation bar and header
+header {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  width: 100%;
+  height: 150px;
+  h1 {
+    width: 100%;
+    height: 40px;
+    margin: 5px auto;
+    padding: 12px auto;
+    font-family: $font;
+    font-size: 1.3rem;
+    line-height: 30px;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    opacity: 0.9;
+    text-shadow: 2px 2px red;
+  }
+
+  nav {
+    margin: $marge;
+    width: 100%;
+    height: 100px;
+    @include flex;
+    background-color: red;
+    position: relative;
+    .home {
+      color: white;
+      margin-bottom: 3px;
+      padding: 5px;
+      font-family: $fontSmall;
+      font-size: 0.5rem;
+      line-height: 15px;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .home:hover {
+      opacity: 0.8;
+    }
+    .radio-btn {
+      margin: 3px;
+    }
+    .radio-btn input[type="radio"] {
+      opacity: 0;
+      position: absolute;
+    }
+
+    .radio-btn label {
+      margin: 3px;
+      padding: 5px;
+      font-family: $fontSmall;
+      font-size: 0.5rem;
+      line-height: 15px;
+      text-align: center;
+      cursor: pointer;
+    }
+    input[type="radio"] + label {
+      padding: 5px 0;
+    }
+    .radio-btn label:hover {
+      opacity: 0.8;
+    }
+
+    .top {
+      text-align: center;
+      padding-top: 5px;
+      padding-left: 5px;
+      width: 100%;
+      height: 25px;
+      position: absolute;
+      top: 0;
+      margin-bottom: 20px;
+    }
+    .bottom {
+      text-align: center;
+      width: 100%;
+      height: 75px;
+      position: absolute;
+      bottom: 5px;
+
+      input[type="search"] {
+        width: 95%;
+        padding: 5px;
+        margin-right: 10px;
+        line-height: 20px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+// movie-slider
+// movie container
+main {
+  margin: $marge;
+  margin-top: 50px;
+  width: 100%;
+  padding: 5px;
+  height: 350px;
+  @include filmtape(12px);
+  position: relative;
+}
+// slideshow
+.carousel {
+  padding: 10px 0;
+  margin: $marge;
+  width: 80%;
+  height: auto;
+  overflow: hidden;
+}
+ul {
+  margin: $marge;
+  text-align: center;
+  display: flex;
+  width: 100%;
+  height: auto;
+  list-style: none;
+  box-sizing: border-box;
+}
+li {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  font-family: $fontSmall;
+  font-size: 0.5rem;
+  line-height: 10px;
+  margin-bottom: 2px;
+  padding-bottom: 8px;
+  img {
+    padding: 0 5px;
+    width: 170px;
+    height: 280px;
+    background-size: cover;
+    margin: $marge;
+    border-radius: 10px;
+    &:hover {
+      transform: scale(1.3);
+    }
+  }
+}
+#first-clone {
+  display: none;
+}
+#last-clone {
+  display: none;
+}
+.buttons {
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  margin-top: -50px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.prev {
+  margin-left: 5px;
+  border-width: 15px 25px 15px 0;
+  border-color: transparent white transparent transparent;
+  opacity: 0.8;
+  left: 0;
+}
+
+.next {
+  margin-left: 5px;
+  border-width: 15px 0px 15px 25px;
+  border-color: transparent transparent transparent white;
+  opacity: 0.8;
+  right: 0;
+}
+footer {
+  padding: 10px;
+  margin: $marge;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+  height: 25px;
+  background-color: red;
+
+  h5 {
+    margin: $marge;
+    width: 100%;
+    font-family: $fontSmall;
+    font-weight: 200;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+}
+
+// media tablet
+@media screen and (min-width: 451px) and (max-width: 800px) {
+  @include tablet;
+}
+
+// media laptop
+@media screen and (min-width: 801px) and (max-width: 1240px) {
+  @include laptop;
+}
+// media big screen
+@media screen and (min-width: 1240px) {
+  @include bigscreen;
+}

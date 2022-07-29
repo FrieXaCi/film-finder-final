@@ -1,0 +1,10 @@
+@mixin filmtape($border) {
+  border-bottom: dashed white ($border);
+  border-top: dashed white ($border);
+}
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}

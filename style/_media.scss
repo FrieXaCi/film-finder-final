@@ -1,0 +1,163 @@
+// media tablet
+@mixin tablet {
+  @media screen and (min-width: 451px) and (max-width: 800px) {
+    body {
+      min-width: 451px;
+      max-width: 800px;
+    }
+    header {
+      h1 {
+        font-size: 2rem;
+        line-height: 30px;
+        letter-spacing: 0.2rem;
+      }
+      nav {
+        .radio-btn label {
+          font-size: 0.9rem;
+          line-height: 18px;
+        }
+        .home {
+          font-size: 0.9rem;
+          line-height: 18px;
+        }
+      }
+    }
+    main {
+      height: 400px;
+    }
+    .carousel {
+      li {
+        text-align: center;
+        font-size: 0.7rem;
+        line-height: 1rem;
+        img {
+          width: 200px;
+          height: 330px;
+        }
+      }
+    }
+  }
+}
+@mixin laptop {
+  @media screen and (min-width: 801px) and (max-width: 1240px) {
+    body {
+      width: 98%;
+    }
+    header {
+      height: 150px;
+      h1 {
+        font-size: 2.5rem;
+        line-height: 45px;
+        letter-spacing: 0.2rem;
+        margin-bottom: 5px;
+      }
+      nav {
+        .radio-btn label {
+          font-size: 1.1rem;
+          line-height: 20px;
+        }
+        .home {
+          font-size: 1.1rem;
+          line-height: 20px;
+        }
+      }
+    }
+    main {
+      height: 450px;
+    }
+    .carousel {
+      li {
+        text-align: center;
+        font-size: 0.7rem;
+        line-height: 1rem;
+        img {
+          width: 220px;
+          height: 350px;
+        }
+      }
+    }
+  }
+}
+@mixin bigscreen {
+  @media screen and (min-width: 1240px) {
+    body {
+      width: 100%;
+    }
+    /// menu
+    header {
+      height: 200px;
+      h1 {
+        height: 60px;
+        font-size: 3rem;
+        line-height: 50px;
+      }
+      nav {
+        @include flex;
+        height: 90px;
+        .radio-btn label {
+          padding: 5px;
+          font-size: 1.2rem;
+          line-height: 42px;
+        }
+        .home {
+          padding: 5px;
+          font-size: 1.2rem;
+          line-height: 42px;
+        }
+        .top {
+          position: absolute;
+          top: 15px;
+          left: 0;
+          width: 75%;
+        }
+        .bottom {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 25%;
+          i {
+            font-size: 1.5rem;
+            margin-right: 25px;
+          }
+          input[type="search"] {
+            width: 80%;
+            line-height: 32px;
+          }
+        }
+      }
+    }
+  }
+  // slideshow
+  main {
+    margin: $marge;
+    height: 500px;
+  }
+  .carousel {
+    ul {
+      li {
+        font-size: 0.8rem;
+        line-height: 20px;
+        img {
+          width: 260px;
+          height: 400px;
+        }
+      }
+    }
+  }
+  // buttons prev and next
+  .prev {
+    margin-left: 15px;
+    border-width: 30px 40px 30px 0;
+  }
+  .next {
+    margin-right: 15px;
+    border-width: 30px 0px 30px 40px;
+  }
+  footer {
+    height: 50px;
+
+    h5 {
+      font-size: 0.9rem;
+    }
+  }
+}

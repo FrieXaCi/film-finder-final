@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FilmFinder</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Javascript" />
+    <meta name="keyword" content="Javascript" />
+    <meta name="author" content="Frieda Haringsma XaCi development" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/196daf2361.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="/style/style.css" />
+    <script
+      type="text/javascript"
+      src="script/movie_database.js"
+      defer
+    ></script>
+    <script type="text/javascript" src="/script/script.js" defer></script>
+    <script type="text/javascript" src="/script/creative.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Winc Film Finder</h1>
+      <nav class="click-event">
+        <div class="top radio-btn">
+          <a class="home" href="/index.html">HOME</a>
+          <label>
+            <input
+              type="radio"
+              id="set-new-movies"
+              name="film-finder"
+              value="new-movies"
+            />
+            NEW MOVIES</label
+          >
+          <label>
+            <input
+              type="radio"
+              id="set-avanger"
+              name="film-finder"
+              value="avenger"
+            />
+            AVENGER</label
+          >
+          <label>
+            <input
+              type="radio"
+              id="set-x-men"
+              name="film-finder"
+              value="x-men"
+            />X-MEN</label
+          >
+          <label>
+            <input
+              type="radio"
+              id="set-princess"
+              name="film-finder"
+              value="princess"
+            />
+            PRINCESS</label
+          >
+          <label>
+            <input
+              type="radio"
+              id="set-batman"
+              name="film-finder"
+              value="batman"
+            />BATMAN</label
+          >
+        </div>
+
+        <div class="bottom">
+          <input
+            type="search"
+            id="movie-input"
+            name="film-search"
+            placeholder="Search"
+          />
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="carousel">
+        <ul id="add-movie"></ul>
+      </div>
+      <div class="buttons prev"></div>
+      <div class="buttons next"></div>
+    </main>
+    <footer>
+      <h5>Copyrights at XaCi-Development</h5>
+    </footer>
+  </body>
+</html>
