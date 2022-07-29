@@ -12,7 +12,7 @@ body {
   width: 98%;
   height: 100vh;
   background: black;
-  color: white;
+  color: antiquewhite;
   font-size: 16px;
 }
 
@@ -33,7 +33,6 @@ header {
     line-height: 30px;
     letter-spacing: 0.2rem;
     text-align: center;
-    opacity: 0.9;
     text-shadow: 2px 2px red;
   }
 
@@ -152,7 +151,6 @@ li {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: white;
   font-family: $fontSmall;
   font-size: 0.5rem;
   line-height: 10px;
@@ -189,16 +187,14 @@ li {
 .prev {
   margin-left: 5px;
   border-width: 15px 25px 15px 0;
-  border-color: transparent white transparent transparent;
-  opacity: 0.8;
+  border-color: transparent antiquewhite transparent transparent;
   left: 0;
 }
 
 .next {
   margin-left: 5px;
   border-width: 15px 0px 15px 25px;
-  border-color: transparent transparent transparent white;
-  opacity: 0.8;
+  border-color: transparent transparent transparent antiquewhite;
   right: 0;
 }
 footer {
