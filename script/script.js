@@ -110,7 +110,7 @@ const searchItems = (event) => {
       removeSearch.removeChild(nameMovie);
       //reset naar homepage na zoeken
       searchInput.addEventListener("click", () => {
-        window.location.href = "/index.html";
+        window.location.href = "./index.html";
       });
     }
   }
