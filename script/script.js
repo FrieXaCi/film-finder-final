@@ -106,12 +106,9 @@ const searchItems = (event) => {
   for (const nameMovie of getMovieNames) {
     let name = nameMovie.textContent.toLowerCase();
     if (name.includes(searchMovie)) {
+      nameMovie.style.display = "inline";
     } else {
-      removeSearch.removeChild(nameMovie);
-      //reset naar homepage na zoeken
-      searchInput.addEventListener("click", () => {
-        window.location.href = "./index.html";
-      });
+      nameMovie.style.display = "none";
     }
   }
 };
