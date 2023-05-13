@@ -1,4 +1,10 @@
 # film-finder-final
+
+assignment WincAcademy
+
+live preview:
+https://film-finder-assignement.netlify.app/
+
 Introduction
 You are going to make a film finder! This project will give you an overview of the variety of movies. For now, you don't need to worry too much about the database(yet)! This is already made for you. There are a collection of movies in the database that can be filtered by the user through filter buttons. The picked movie can link the user to the IMDB
 
